@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Home</title>
+
+    <style>
+    #blst {
+      margin-bottom:0rem;
+       img {
+
+         background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,11,149,1) 46%, rgba(0,212,255,1) 100%);
+       }
+
+
+    }
+    
+    
+    </style>
+  </head>
+  <body>
+    {% extends 'home/base.html' %}
+    {% block content %}
+
+
+
+      <div class="jumbotron jumbotron-fluid " style="background-image: url('https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'); background-size: cover;margin-bottom:0rem;">
+      <div class="container">
+        <h1 class="display-3 ">Need an extraordirnary design, yet extremely simple system  </h1>
+        <p class="lead text-info">Start reading from here!</p>
+        <hr class="my-2">
+        <p>More info</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="{% url 'blog:blog' %}" role="button">Go ahead and explore</a>
+        </p>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid " style="background-image: url('https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'); background-size: cover;margin-bottom:0rem;">
+      <div class="container">
+        <h1 class="display-3 text-primary">Want to write</h1>
+        <p class="lead text-white">You could become a writer with us!</p>
+        <hr class="my-2">
+        <p>More info</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="{% url 'staff:signup' %}" role="button">Signup with staff</a>
+        </p>
+      </div>
+    </div>
+    
+    </div>
+
+    <div id="blst" class="jumbotron jumbotron-fluid" style="background-color:#322f3d;">
+      <div class="container">
+        
+          <p class="h1 text-center"><a class="h1" href="{% url 'blog:blog' %}">Blog</a>    <span style="color: rgb(14,217,163);color: linear-gradient(90deg, rgba(14,217,163,1) 0%, rgba(49,149,11,1) 46%, rgba(255,226,0,1) 100%);"><i class="fas fa-slash    "></i></span>  <a  class="h1" href="{% url 'staff:staff' %}">Staff</a></p>
+          
+        </p>
+      </div>
+    </div>
+  <br>
+  <br>
+   <div class="container">
+      <h3 class="text-center mb-3">  WHAT OUR HAPPY READERS AND STAFF ARE SAYING</h1>
+     <br> 
+      <div class="row">
+        <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+          <i class="fas fa-quote-left fa-2x    "></i>
+          <p class="mb-0">So amazing and simple.</p>
+          <footer class="blockquote-footer">User1</footer>
+        </blockquote>
+        </div>
+        <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+          <i class="fas fa-quote-left fa-2x   "></i>
+          <p class="mb-0">One of the best admin sites.</p>
+          <footer class="blockquote-footer">User2</footer>
+        </blockquote>
+        </div>
+        <div class="col-md-4">
+        <blockquote class="blockquote text-center">
+          <i class="fas fa-quote-left fa-2x   "></i>
+          <p class="mb-0">Great for filtering</p>
+          <footer class="blockquote-footer">User3</footer>
+        </blockquote>
+        </div>
+      </div> 
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/96b9969061.js" crossorigin="anonymous"></script>
+
+  {% endblock content %}
+  </body>
+</html>
